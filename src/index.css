@@ -1,4 +1,314 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  display: grid;
+  place-items: center;
+}
+.about__me-img {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  height: 100%;
+  transition: all 400ms ease;
+}
+.about__me-img:hover {
+  transform: rotate(0);
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about__card {
+  background: #2c2c6c;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 400ms ease;
+}
+.about__card h5 {
+  font-size: 0.95rem;
+}
+.about__card small {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about__card:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+.about__icon {
+  color: #4db5ff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+}
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.experience__frontend, .experience__backend {
+  background: #2c2c6c;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
+}
+.experience__frontend:hover, .experience__backend:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+.experience__frontend h3, .experience__backend h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4db5ff;
+}
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+.experience__details-icon {
+  margin-top: 6px;
+  color: #4db5ff;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+  .experience__frontend, .experience__backend {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .experience__content {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+  .experience__frontend, .experience__backend {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.header__container .me {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), transparent);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+}
+.header__container .me img {
+  margin-top: 2.2rem;
+  height: 100%;
+  object-fit: none;
+}
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: #4db5ff;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+.scroll__down {
+    display: none;
+  }
+}
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+  background: #1f1f38;
+  color: #fff;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.service {
+  background: #2c2c6c;
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid #4db5ff;
+  height: fit-content;
+  transition: all 400ms ease;
+}
+.service:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+.service__head {
+  background: #4db5ff;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+.service__head h3 {
+  color: #1f1f38;
+  font-size: 1rem;
+  text-align: center;
+}
+.service__list {
+  padding: 2rem;
+}
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+.service__list li p {
+  font-size: 0.9rem;
+}
+.service__list-icon {
+  color: #4db5ff;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service {
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +361,10 @@ section > h2 {
 }
 section > h5 {
   text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-light {
   color: rgba(255, 255, 255, 0.6);
 }
 

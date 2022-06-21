@@ -56,6 +56,10 @@ section {
     }
 }
 
+.text-light {
+    color: $color-light;
+}
+
 a {
     color: $color-primary;
     transition: $transition;
