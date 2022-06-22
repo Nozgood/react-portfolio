@@ -22,7 +22,7 @@ const data = [
   {
     id: 3,
     image: ratingImg,
-    title: 'Rating Interactive Card Component',
+    title: 'Rating Card Component',
     github: 'https://github.com',
     demo: 'https://github.com',
   },
