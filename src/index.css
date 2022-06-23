@@ -28,7 +28,7 @@
   gap: 1.5rem;
 }
 .about__card {
-  background: #2c2c6c;
+  background: #52616B;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -44,11 +44,11 @@
 }
 .about__card:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: #F0F5F9;
   cursor: default;
 }
 .about__icon {
-  color: #4db5ff;
+  color: #C9D6DF;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -96,7 +96,7 @@
   gap: 1.2rem;
 }
 .contact__option {
-  background: #2c2c6c;
+  background: #52616B;
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -105,7 +105,7 @@
 }
 .contact__option:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: #F0F5F9;
 }
 .contact__option-icon {
   font-size: 1.5rem;
@@ -129,7 +129,7 @@ textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid rgba(77, 181, 255, 0.4);
+  border: 2px solid #F0F5F9;
   resize: none;
   color: #fff;
 }
@@ -158,7 +158,7 @@ textarea {
   gap: 2rem;
 }
 .experience__frontend, .experience__backend {
-  background: #2c2c6c;
+  background: #52616B;
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -166,13 +166,13 @@ textarea {
 }
 .experience__frontend:hover, .experience__backend:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: #F0F5F9;
   cursor: default;
 }
 .experience__frontend h3, .experience__backend h3 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #4db5ff;
+  color: #C9D6DF;
 }
 .experience__content {
   display: grid;
@@ -185,7 +185,7 @@ textarea {
 }
 .experience__details-icon {
   margin-top: 6px;
-  color: #4db5ff;
+  color: #C9D6DF;
 }
 
 @media screen and (max-width: 1024px) {
@@ -211,14 +211,14 @@ textarea {
   }
 }
 footer {
-  background: #4db5ff;
+  background: #C9D6DF;
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 7rem;
 }
 footer a {
-  color: #1f1f38;
+  color: #1E2022;
 }
 
 .footer__logo {
@@ -234,7 +234,7 @@ footer a {
   margin-bottom: 4rem;
 }
 .footer__socials a {
-  background: #1f1f38;
+  background: #1E2022;
   color: #fff;
   padding: 0.8rem;
   border-radius: 0.7rem;
@@ -243,12 +243,12 @@ footer a {
 }
 .footer__socials a:hover {
   background: transparent;
-  color: #1f1f38;
-  border-color: #1f1f38;
+  color: #1E2022;
+  border-color: #1E2022;
 }
 .footer__copyright {
   margin-bottom: 4rem;
-  color: #1f1f38;
+  color: #1E2022;
 }
 
 .permalinks {
@@ -308,7 +308,7 @@ header {
   content: "";
   width: 1px;
   height: 2rem;
-  background: #4db5ff;
+  background: #C9D6DF;
 }
 
 .cta {
@@ -366,11 +366,12 @@ nav a {
   font-size: 1.1rem;
 }
 nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: #fff;
+  color: #52616B;
 }
 nav a.active {
-  background: #1f1f38;
-  color: #fff;
+  background: #C9D6DF;
+  color: #1E2022;
 }
 
 .portfolio__container {
@@ -379,14 +380,14 @@ nav a.active {
   gap: 2.5rem;
 }
 .portfolio__item {
-  background: #2c2c6c;
+  background: #52616B;
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: all 400ms ease;
 }
 .portfolio__item:hover {
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: #F0F5F9;
   background: transparent;
 }
 .portfolio__item-image {
@@ -426,25 +427,25 @@ nav a.active {
 }
 
 .service {
-  background: #2c2c6c;
+  background: #52616B;
   border-radius: 0 0 2rem 2rem;
-  border: 1px solid #4db5ff;
+  border: 1px solid #C9D6DF;
   height: fit-content;
   transition: all 400ms ease;
 }
 .service:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: #F0F5F9;
   cursor: default;
 }
 .service__head {
-  background: #4db5ff;
+  background: #C9D6DF;
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 .service__head h3 {
-  color: #1f1f38;
+  color: #1E2022;
   font-size: 1rem;
   text-align: center;
 }
@@ -460,7 +461,7 @@ nav a.active {
   font-size: 0.9rem;
 }
 .service__list-icon {
-  color: #4db5ff;
+  color: #C9D6DF;
   margin-top: 2px;
 }
 
@@ -490,7 +491,7 @@ nav a.active {
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  border: 0.4rem solid rgba(77, 181, 255, 0.4);
+  border: 0.4rem solid #F0F5F9;
 }
 .client__avatar img {
   width: 100%;
@@ -505,7 +506,7 @@ nav a.active {
 }
 
 .testimonial {
-  background: #2c2c6c;
+  background: #52616B;
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
@@ -518,7 +519,7 @@ nav a.active {
 }
 
 .swiper-pagination-bullet {
-  background: #4db5ff;
+  background: #C9D6DF;
 }
 
 @media screen and (max-width: 1024px) {
@@ -555,7 +556,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #1f1f38;
+  background: #1E2022;
   color: #fff;
   line-height: 1.7;
 }
@@ -582,7 +583,7 @@ section {
 }
 section > h2 {
   text-align: center;
-  color: #4db5ff;
+  color: #C9D6DF;
   margin-bottom: 3rem;
 }
 section > h5 {
@@ -595,7 +596,7 @@ section > h5 {
 }
 
 a {
-  color: #4db5ff;
+  color: #C9D6DF;
   transition: all 400ms ease;
 }
 a:hover {
@@ -605,21 +606,21 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: #4db5ff;
+  color: #C9D6DF;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid #4db5ff;
+  border: 1px solid #C9D6DF;
   transition: all 400ms ease;
 }
 .btn:hover {
   background: #fff;
-  color: #1f1f38;
+  color: #1E2022;
   border-color: transparent;
 }
 .btn-primary {
-  background: #4db5ff;
-  color: #1f1f38;
+  background: #52616B;
+  color: #fff;
 }
 
 img {
