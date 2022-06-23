@@ -23,7 +23,7 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__details-icon' />
                 <div>              
                   <h4>CSS</h4>
-                  <small className='text-light'>Intermediate</small>
+                  <small className='text-light'>Experienced</small>
                 </div>
             </article>
             <article className="experience__details">
@@ -36,22 +36,15 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Bootstrap</h4>
+                <h4>SASS</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
                 <div>
-                  <h4>Tailwind</h4>
-                  <small className='text-light'>Experienced</small>
-                </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-                <div>
                   <h4>React</h4>
-                  <small className='text-light'>Experienced</small>
+                  <small className='text-light'>Intermediate</small>
                 </div>
             </article>
           </div>
@@ -63,14 +56,14 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>MongoDB</h4>
+                <h4>NodeJS</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>PHP</h4>
+                <h4>MongoDB</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
@@ -80,20 +73,6 @@ const Experience = () => {
                 <h4>MySQL</h4>
                 <small className='text-light'>Basic</small>
               </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-                <div>
-                  <h4>NodeJS</h4>
-                  <small className='text-light'>Experienced</small>
-                </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-                <div>
-                  <h4>Python</h4>
-                  <small className='text-light'>Experienced</small>
-                </div>
             </article>
           </div>
         </div>
