@@ -86,16 +86,15 @@
     margin: 1.5rem 0;
   }
 }
-.container.contact__container {
-  display: grid;
-}
-
 .contact__options {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.2rem;
 }
 .contact__option {
+  width: 100%;
+  max-width: 500px;
   background: #52616B;
   padding: 1.2rem;
   border-radius: 1.2rem;
@@ -264,7 +263,6 @@ footer a {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .footer__socials {
     margin-bottom: 2.6rem;
   }
@@ -337,9 +335,8 @@ header {
   header {
     height: 100vh;
   }
-
   .header__socials,
-.scroll__down {
+  .scroll__down {
     display: none;
   }
 }
@@ -470,7 +467,6 @@ nav a.active {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-
   .service {
     height: auto;
   }
@@ -531,7 +527,6 @@ nav a.active {
   .container.testimonials__container {
     width: 90%;
   }
-
   .client__review {
     width: 90%;
   }
@@ -632,7 +627,6 @@ img {
   .container {
     width: 86%;
   }
-
   section {
     margin-top: 6rem;
   }
@@ -641,7 +635,6 @@ img {
   .container {
     width: 90%;
   }
-
   section > h2 {
     margin-bottom: 2rem;
   }

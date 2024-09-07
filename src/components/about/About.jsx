@@ -1,8 +1,5 @@
 import React from 'react'
 import Me from '../../assets/sans-titre-2.png';
-import { FaAward } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { VscFolderLibrary } from 'react-icons/vsc';
 
 const About = () => {
   return (
@@ -15,30 +12,20 @@ const About = () => {
         <div className="about__me-img">
           <img src={Me} alt="About" />
         </div>
-
         </div>
-
         <div className="about__content">
-          <div className="about__cards">
-            <article className='about__card'>
-            <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Experience</small>
-            </article>
-            <article className='about__card'>
-            <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
-            </article>
-            <article className='about__card'>
-            <VscFolderLibrary className='about__icon'/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
-            </article>
-          </div>
-
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis itaque vitae quae, aut, odio cum obcaecati dolores velit delectus autem ducimus sapiente nemo, quos officiis! Omnis velit assumenda eius quam!
+            My name is Nowfeel, I am 25 years old. I am currently based in Lille, France.<br/><br/>
+            During this past 3 years (2021-2024), my purpose was to learn as much as possible about software engineering
+            via
+            Internship and graduations.
+            Today and for the 3 next years, my objective is to use the different skills I acquired to contribute to
+            projects
+            that can make and will make the world better.<br/>
+            And Also to keep learning, because I'm convinced that we never stop to. <br/><br/>
+            I currently work as Back-End Developer at Bliink, a French Start-Up in the advertising, based in Paris.
+            On my free time, I learn new things about blockchain and smart contracts.
+            I also want to learn about embedded systems but I am a very beginner.
           </p>
           <a href="#contact" className='btn btn-primary'> Let's Talk </a>
         </div>

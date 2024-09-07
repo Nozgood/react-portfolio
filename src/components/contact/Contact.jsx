@@ -1,8 +1,7 @@
 import React from 'react'
 import { MdOutlineEmail } from 'react-icons/md'
 import { AiOutlineTwitter } from 'react-icons/ai'
-import { AiOutlineInstagram } from 'react-icons/ai'
-
+import { AiOutlineLinkedin } from 'react-icons/ai'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -43,19 +42,12 @@ const Contact = () => {
             <a href="https://twitter.com/messages/compose" target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
           <article className="contact__option">
-            <AiOutlineInstagram className='contact__option-icon'/>
-            <h4>Instagram</h4>
-            <h5>nowfeel.dev</h5>
-            <a href="https://www.instagram.com/direct/new/" target='_blank' rel='noreferrer'>Send a Message</a>
+            <AiOutlineLinkedin className='contact__option-icon'/>
+            <h4>Linkedin</h4>
+            <h5>Nowfeel Safi</h5>
+            <a href="https://www.linkedin.com/messaging/thread/new/" target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
         </div>
-
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message'></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
-        </form>
       </div>
     </section>
   )
