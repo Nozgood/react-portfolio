@@ -51,4 +51,4 @@ jobs:
         run: |
           curl -X POST \
           -H "Accept: application/json" \
-          ${{ secrets.RENDER_DEPLOY_HOOK_P13 }}
+          ${{ secrets.RENDER_DEPLOY_HOOK_PORTFOLIO }}
