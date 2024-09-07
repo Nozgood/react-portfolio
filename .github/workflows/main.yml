@@ -1,0 +1,54 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Docker
+        uses: docker/setup-buildx-action@v2
+        with:
+          install: true
+
+      - name: Docker buildx builder
+        run: docker buildx create --use
+
+      - name: Login to Docker
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Extract commit hash
+        id: vars
+        run: |
+          echo "COMMIT_HASH=${GITHUB_SHA::7}" >> $GITHUB_ENV
+
+      - name: Build and push Docker Portfolio Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          platforms: linux/amd64,linux/arm64
+          tags: ${{ secrets.DOCKER_USERNAME }}/portfolio:latest, ${{ secrets.DOCKER_USERNAME }}/portfolio:${{ env.COMMIT_HASH }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: deploy render
+        run: |
+          curl -X POST \
+          -H "Accept: application/json" \
+          ${{ secrets.RENDER_DEPLOY_HOOK_P13 }}

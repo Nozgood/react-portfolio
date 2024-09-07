@@ -22,12 +22,13 @@ nav {
         font-size: 1.1rem;
 
         &:hover {
-            background: rgba(0,0,0,0.3);
+            background: $color-white;
+            color: $color-bg-variant;
         }
 
         &.active {
-            background: $color-bg;
-            color: $color-white;
+            background: $color-primary;
+            color: $color-bg;
         }
     }
 }

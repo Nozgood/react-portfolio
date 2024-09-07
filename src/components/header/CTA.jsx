@@ -1,7 +1,5 @@
 import React from 'react'
-import CV from '../../assets/CV-portfolio.pdf'
-
-// button component 
+import CV from '../../assets/CV_2024_Backend_Developer_EN_portfolio.pdf'
 
 const CTA = () => {
   return (
