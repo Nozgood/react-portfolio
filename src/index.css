@@ -391,7 +391,7 @@ nav a.active {
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
-  height: 400px;
+  height: 250px;
 }
 .portfolio__item-image img {
   height: 100%;
@@ -399,11 +399,14 @@ nav a.active {
 }
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
+  width: max-content;
 }
 .portfolio__item-cta {
-  display: flex;
-  gap: 1rem;
   margin-bottom: 1rem;
+}
+.portfolio__btn {
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -598,8 +601,8 @@ a:hover {
   color: #fff;
 }
 
+.link,
 .btn {
-  width: max-content;
   display: inline-block;
   color: #F0F5F9;
   padding: 0.75rem 1.2rem;
@@ -608,15 +611,21 @@ a:hover {
   border: 1px solid #C9D6DF;
   transition: all 400ms ease;
 }
+.link:hover,
 .btn:hover {
   background: #fff;
   color: #1E2022;
   border-color: transparent;
 }
+.link-primary,
 .btn-primary {
   background: #C9D6DF;
   color: #1E2022;
 }
+.btn {
+  width: max-content;
+}
+
 img {
   display: block;
   width: 100%;

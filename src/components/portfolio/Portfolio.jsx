@@ -1,30 +1,27 @@
 import React from 'react'
-import nftImg from '../../assets/portfolio-img-exemple.jpg';
-import faqImg from '../../assets/portfolio-img-exemple-2.jpg';
-import ratingImg from '../../assets/portfolio-img-exemple-3.jpg';
+import lettings from '../../assets/p13_ecole_logo.png';
+import epicEvents from '../../assets/p12_logo.png';
+import gudlft from '../../assets/p11_logo.png';
 
 
 const data = [
   {
     id: 1,
-    image: nftImg,
-    title: 'NFT Card Component',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: lettings,
+    title: 'Orange County Lettings',
+    github: 'https://github.com/Nozgood/p13_lettings',
   },
   {
     id: 2,
-    image: faqImg,
-    title: 'FAQ Card Component',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: epicEvents,
+    title: 'Epic Events',
+    github: 'https://github.com/Nozgood/p12_epic_events',
   },
   {
     id: 3,
-    image: ratingImg,
-    title: 'Rating Card Component',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: gudlft,
+    title: 'Gudlft',
+    github: 'https://github.com/Nozgood/p11_gudlft',
   },
 ]
 const Portfolio = () => {
@@ -35,7 +32,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, github}) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -43,8 +40,7 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn'  target='_blank' rel='noreferrer'>GitHub</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+                  <a href={github} className='link portfolio__btn'  target='_blank' rel='noreferrer'>GitHub</a>
                 </div>
               </article>
             )

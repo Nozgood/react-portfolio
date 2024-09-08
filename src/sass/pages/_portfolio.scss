@@ -21,7 +21,7 @@
         &-image {
             border-radius: 1.5rem;
             overflow: hidden;
-            height: 400px;
+            height: 250px;
 
             img {
                 height: 100%;
@@ -31,13 +31,17 @@
 
         h3 {
             margin: 1.2rem 0 2rem;
+            width: max-content;
         }
 
         &-cta {
-            display: flex;
-            gap: 1rem;
             margin-bottom: 1rem;
         }
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
     }
 }
 
