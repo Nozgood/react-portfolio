@@ -10,53 +10,77 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Backend Development - Main Skill</h3>
+          <h3>Hard Skills</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Golang</h4>
               </div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-                <div>              
-                  <h4>Python</h4>
-                </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>MongoDB</h4>
+                <h4>gRPC APIs</h4>
               </div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Python</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Django</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>SQL</h4>
               </div>
             </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>MongoDB</h4>
+              </div>
+            </article>
           </div>
         </div>
-        <div className="experience__backend">
-          <h3>Software Development Practices</h3>
+        <div className="experience__frontend">
+          <h3>Soft Skills</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Domain-Driven Design</h4>
+                <h4>Curiosity</h4>
               </div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Clean Architecture</h4>
+                <h4>Dynamism</h4>
               </div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
+              <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Front-End Development</h4>
+                <h4>Rigor</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Team Work</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Autonomy</h4>
               </div>
             </article>
           </div>

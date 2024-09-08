@@ -12,6 +12,9 @@
         border-radius: 2rem;
         border: 1px solid transparent;
         transition: $transition;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &:hover {
             border-color: $color-primary-variant;
