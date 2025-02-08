@@ -1,6 +1,5 @@
 import React from 'react'
 import { FiLinkedin } from 'react-icons/fi';
-import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
@@ -17,7 +16,6 @@ const Footer = () => {
 
         <div className="footer__socials">
             <a href="https://linkedin.com/in/nowfeel-safi-0294531b5"> <FiLinkedin/></a>
-            <a href="https://twitter.com/selecto00"> <AiOutlineTwitter/></a>
             <a href="https://github.com/nozgood"> <FaGithub/></a>
         </div>
 
