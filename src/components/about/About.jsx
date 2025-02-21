@@ -19,13 +19,12 @@ const About = () => {
             During this past 3 years (2021-2024), my purpose was to learn as much as possible about software engineering
             via
             Internship and graduations.
-            Today and for the 3 next years, my objective is to use the different skills I acquired to contribute to
+            Today and for the rest of my career, my objective is to use the different skills I acquired to contribute to
             projects
             that can make and will make the world better.<br/>
             And Also to keep learning, because I'm convinced that we never stop to. <br/><br/>
             I currently work as Back-End Developer at Bliink, a French Start-Up in the advertising, based in Paris.
             On my free time, I learn new things about blockchain and smart contracts.
-            I also want to learn about embedded systems but I am a very beginner.
           </p>
           <a href="#contact" className='btn btn-primary'> Let's Talk </a>
         </div>
