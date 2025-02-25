@@ -1,6 +1,5 @@
 import React from 'react'
 import CTA from './CTA'
-import me from '../../assets/me-2-without-bg.png'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
