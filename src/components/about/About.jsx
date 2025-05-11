@@ -8,14 +8,9 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
-        <div className="about__me-img">
-          <img src={Me} alt="About" />
-        </div>
-        </div>
         <div className="about__content">
           <p>
-            My name is Nowfeel, I am 25 years old. I am currently based in Lille, France.<br/><br/>
+            My name is Nowfeel, I am 26 years old. I am currently based in Lille, France.<br/><br/>
             During this past 3 years (2021-2024), my purpose was to learn as much as possible about software engineering
             via
             Internship and graduations.
