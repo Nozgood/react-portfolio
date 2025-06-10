@@ -10,16 +10,11 @@ const About = () => {
       <div className="container about__container">
         <div className="about__content">
           <p>
-            My name is Nowfeel, I am 26 years old. I am currently based in Lille, France.<br/><br/>
-            During this past 3 years (2021-2024), my purpose was to learn as much as possible about software engineering
-            via
-            Internship and graduations.
-            Today and for the rest of my career, my objective is to use the different skills I acquired to contribute to
-            projects
-            that can make and will make the world better.<br/>
-            And Also to keep learning, because I'm convinced that we never stop to. <br/><br/>
-            I currently work as Back-End Developer at Bliink, a French Start-Up in the advertising, based in Paris.
-            On my free time, I learn new things about blockchain and smart contracts.
+            My name is Nowfeel, I am 26 years old and I'm currently based in Lille, France.<br/><br/>
+            I'm a software engineer with a strong focus on backend development and system design. <br/>
+            What I enjoy most about software development is solving real-world problems and meeting evolving needs. <br/>
+            Golang is my language of choice, though I always view programming languages as tools — the right one depends on the job.<br/><br/>
+            I'm deeply committed to continuous learning. In a field like computer science, where everything evolves rapidly, staying curious and adaptable is essential
           </p>
           <a href="#contact" className='btn btn-primary'> Let's Talk </a>
         </div>
